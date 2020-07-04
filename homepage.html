@@ -1,0 +1,304 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<script>
+  function open_nav(){
+    document.getElementById('sidenav').style.cssText="    background-color: #f3f6f8;position:absolute;right:0;transition:0.6s;";
+  
+  };
+
+  function close_nav(){
+    document.getElementById('sidenav').style.cssText="    background-color: #f3f6f8;position:absolute;right:-25%;transition:0.6s";
+  };
+</script>
+<style>
+  body{
+    margin:0;
+    padding:0;
+  }
+.navbar{ 
+    position:sticky;
+    height: 40px;
+    padding: 0 2%;
+    background: #283d4b;
+    padding: 8px 4%;
+    box-shadow: 0 0 20px black;  
+}
+#brand{
+    height: 44;
+    width: 44;
+    background-color: #0c3ad1;
+    color:white;
+    border-radius:3px;
+    font-size: 40px;
+    padding-left: 8px;
+}
+.search{
+    top: 12;
+    left: 10;
+    position: absolute;
+}
+.search-container{
+    position: relative;
+    left: 60;
+    top: -45;
+    width:25%;
+    height:44px;
+    background:rgb(204, 225, 243);
+    border-radius:2px;
+}
+.icon{
+    font-size:35px;
+    color:rgb(143, 142, 142);
+    padding:4px
+}
+.icon-title{
+    position: relative;
+    top: 17;
+    right: 40;
+    font-size: 17px;
+}
+#profile{
+    width:44px;
+    height:44px;
+    background-color:red
+}
+    .fa-search{
+    font-size:22px;
+    color:
+}
+body{
+  overflow-x:hidden;
+}
+.placeholder{
+    position: absolute;
+    margin: 15px 35px;
+}
+#navbar-content{
+    position:absolute;
+    top: 12px;
+    left: 35%;
+    color:white;
+}
+a{
+    padding:4px;
+    color:white;
+}
+link:active{
+    text-decoration: underline;
+}
+
+#link-container{
+    position:absolute;
+    top:0;
+    left:45%;
+    height:40px;
+    padding:7px;
+    background:inherit;
+}
+.link-item{
+    padding-right:8px;
+}
+.icon:hover{
+    color:white;
+    transition:1.1s;
+    border-bottom:white 2px solid;
+}
+
+#right-navbar{
+    position:absolute;
+    top: 16px;
+    right:10%;
+    float:right;
+}
+#sidenav{
+    width:25%;
+    height:600%;
+    background-color: #f5e0cc;
+    position:absolute;
+    right:-30%;
+    box-shadow: 0px 1px 20px 0px black; 
+}
+#products{
+    height:40%;
+    width:100%;
+    position:absolute;
+    padding:10px;
+    margin:50px 40px;
+    background-color:#f3f6f8;
+    border:solid rgb(141, 129, 129) 2px;
+}
+.pd-icon{
+    font-size:80px;
+    padding-right:4px;
+}
+#openbtn{
+    background-color: inherit;
+    color:rgb(183, 184, 183);
+    font-size:30px;
+    padding:2px;
+    position:absolute;
+    right:0;
+    top:5px;
+}
+.navlink{
+    position: absolute;
+    right: 5px;
+    top: -10;
+    padding-top: 4px;
+}
+#openbtn:hover{
+    color:white;  
+}
+#closebtn{
+    position:absolute;
+    top:0;
+    right:0;
+    background:inherit;
+    color:black;
+    font-size: 25px;
+    border-radius: 50%;
+    border-color:inherit;
+}
+#closebtn:hover{
+    transform:scale(1.5,1.5);
+}
+
+/* main body code */
+
+.main-container{
+    position:relative;
+    width:75%;
+    height:100%;
+    padding-bottom:550px;
+    background:#d1dee7;
+    margin:1px auto;
+    z-index:-1;
+    box-shadow: 0 0 13px black;
+}
+
+#updates{
+    padding:10px;
+    font-size: 20px;
+}
+
+#intro{
+    position: relative;
+    top: -50;
+    left: 90px;
+    font-size: 24px;
+}
+.sub-text{
+    font-size:15px;
+}
+
+#follow{
+    color:rgb(19, 139, 236);
+    position:absolute;
+    right:100px;
+    top:30px;
+    font-weight: bolder;
+}
+.start{
+    font-size:20px;
+    padding:10px;
+}
+#records{
+    padding:10px;
+}
+
+#reviews{
+    padding-left:10px;
+}
+span{
+    padding-right:15px;
+}
+.products{
+    font-size:35px;
+}
+
+img .database{
+    padding:10px auto;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    overflow-x:auto;
+}
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <section id="brand"> <a href="www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </section>
+          <div class="search-container" onclick="open_search()">
+            <i class="fa fa-search search" aria-hidden="true"></i>
+            <span class="placeholder">Search</span>
+          </div>
+    <div id ="link-container">
+    <a href="#"><span class="link-item"><i class="fa fa-home icon" aria-hidden="true"></i></span></a>
+    <a href="#"><span class="link-item"><i class="fa fa-user-circle-o icon" aria-hidden="true"></i></span></a>
+    <a href="#"><span class="link-item"><i class="fa fa-briefcase icon" aria-hidden="true"></i></span></a>
+    <a href="#"><span class="link-item"><i class="fa fa-comments icon" aria-hidden="true"></i></i></span></a>
+    <a href="#"><span class="link-item"><i class="fa fa-bell icon" aria-hidden="true"></i></span></a>
+     <a href="#"><span class="profile"><i class="fa fa-male icon" aria-hidden="true"></i></span></a>
+    </div>
+  
+   
+
+    <section id="right-navbar">
+      <div id="openbtn" class="navlink" onclick="open_nav()">
+        <i class="fa fa-bars navlink" aria-hidden="true"></i></section>
+  </div>
+<div id="sidenav">
+  <button id="closebtn" onclick="close_nav()"> <i class="fa fa-times" aria-hidden="true"></i></button>
+  <section id= "products"> 
+    <h3>Visit More LikedIn Products</h3><hr> <br>
+    <span ><i class="fa fa-graduation-cap pd-icon" aria-hidden="true"></i><i class="fa fa-users pd-icon" aria-hidden="true"></i> <i class="fa fa-slideshare pd-icon" aria-hidden="true"></i></span>
+
+  
+  </h3></section>
+
+</div>
+ </div>
+
+ <br>
+
+ <div class="main-container">
+    <section id="updates"><strong>Pratibha Shrivastav, Abhik Sarkar </strong>and 731 other connections follow LinkedIn</section> <i class="fa fa-ellipsis-h" style=" position:absolute;right:10px;top:10px;font-size:35px;" aria-hidden="true"></i><hr>
+    <section id="brand" style="position:relative;left:20px;border-radius:3px;"> <a href="www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </section>
+    <section id="intro"> <strong> LikedIn</strong> <br><span class="sub-text">12,107,982 followers <br>Promoted</span><span id="follow">+Follow</span> </section>
+<p class="start">Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 675+ million members worldwide, including executives from every Fortune 500 company, LinkedIn is the world's largest professional network. The company has a diversified business model with revenue coming from Talent Solutions, Marketing Solutions, and Premium Subscriptions products. Headquartered in Silicon Valley, LinkedIn has offices across the globe.</p>
+<img src="https://keithbrown.com/wp-content/uploads/2019/03/linkedin-profile-optimization-tips.jpg " width="100%" alt="likedin_community">
+
+<section id="reviews">
+<span id="records"><i class="fa fa-thumbs-up" aria-hidden="true"></i><i class="fa fa-lightbulb-o" aria-hidden="true"></i> <i class="fa fa-gratipay" aria-hidden="true"></i><span><br><hr>
+ <span> <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>Likes</span><span><i class="fa fa-commenting-o" aria-hidden="true"></i>Comments</span> <span><i class="fa fa-share" aria-hidden="true"></i>Share</span><span><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send</span>
+</section>
+<hr>
+ </div>
+
+ <br><br><br><br>
+ <div class="main-container">
+  <section id="updates"><strong>Pratibha Shrivastav, Abhik Sarkar </strong>and 731 other connections follow LinkedIn</section> <i class="fa fa-ellipsis-h" style=" position:absolute;right:10px;top:10px;font-size:35px;" aria-hidden="true"></i><hr>
+  <section id="brand" style="position:relative;left:20px;border-radius:3px;"  ><i class="fa fa-database" aria-hidden="true"></i></section></a> </section>
+  <section id="intro"> <strong> Database Management System</strong> <br><span class="sub-text">12,107,982 followers <br>Promoted</span><span id="follow">+Follow</span> </section>
+<p class="start">Database Management System (DBMS) is a collection of programs that allow users to access the database, manipulate data and display and report data. A DBMS also has the task of managing access to the database.
+
+  Database Management Systems are not a new concept and were first implemented in the sixties. The Integrated Data Store (IDS) of Charles Bachmen is seen as the first DBMS.
+  
+  Over time, database technologies have evolved considerably, while the use and functionality of databases have increased enormously.</p>
+<img class="database" src="https://cdn.shortpixel.ai/client/q_glossy,ret_img,w_600/https://www.itpedia.nl/wp-content/uploads/2017/11/database2-600x450.jpg">
+
+<section id="reviews">
+<span id="records"><i class="fa fa-thumbs-up" aria-hidden="true" ></i><i class="fa fa-lightbulb-o" aria-hidden="true"></i> <i class="fa fa-gratipay" aria-hidden="true"></i><span><br><hr>
+<span> <a href="#"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></a>Likes</span><a href="#"><span><i class="fa fa-commenting-o" aria-hidden="true"></i></a>Comments</span> <span><a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>Share</span><span><a href="#"></a><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>Send</span>
+</section>
+<hr>
+
+
+</body>
+</html>
